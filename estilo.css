@@ -16,7 +16,7 @@ scroll-padding-top: 80px;
 }
  
 body{
-     background-image: url(../img/fundo.jpg);
+     background-image: url(../img/fundobom.jpg);
     background-size: cover;
      width: 110%;
     height: 100vh;
@@ -24,7 +24,7 @@ body{
     color: aliceblue;
 }
 header{
-    margin-top: 20px;
+   
     position: fixed;
     top: 0;
     left: 0;
@@ -144,7 +144,7 @@ color:aliceblue;
 }
 .typing-text span::after{
     content: "";
-    background-color: black;
+   
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
@@ -238,7 +238,7 @@ color:aliceblue;
 .menu-icon span {
     display: block;
     height: 4px;
-    background-color: rgb(31, 163, 252);
+    background-color: rgba(221, 255, 69, 0.884);
     border-radius: 2px;
 }
 @media (max-width: 995px) {
@@ -252,9 +252,9 @@ color:aliceblue;
 .blocos h3 {
     font-size: 3rem;
     margin-bottom: 2rem;
-    border-left: 5px solid  rgb(31, 163, 252);
+    border-left: 5px solid  rgb(255, 255, 255);
     padding-left: 1.5rem;
-    color:  rgb(31, 163, 252);
+    color:  rgb(253, 253, 253);
 }
 section p {
     font-size: 1.8rem;
@@ -271,4 +271,59 @@ section p {
 #contato a:hover {
     color: rgb(31, 163, 252);
     text-decoration: underline;
+}
+form{
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px rgba(221, 255, 69, 0.884);
+    border-right: 2rem rgba(221, 255, 69, 0.884);
+    border-bottom: 0.5rem solid rgba(221, 255, 69, 0.884);
+}
+form h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: rgb(31, 163, 252);
+}
+form input, form select, form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin: 0.5rem 0 1.5rem 0;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.301);
+    color: black;
+}
+form input::placeholder, form textarea::placeholder{
+    color: black;
+}
+form input[type="radio"]{
+    width: unset;
+    margin-right: 1rem;
+}
+form input[type="submit"]{
+    background-color: rgb(31, 163, 252);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+form input[type="submit"]:hover{
+    background-color: rgb(31, 163, 252);
+    box-shadow: 0 0 25px rgb(31, 163, 252);
+}
+@media (max-width: 600px){
+    section{
+        padding: 3rem 4%;
+    }
+    .home .home-content h1{
+        font-size: 3rem;
+    }
+    .home-content h3{
+        font-size: 2rem;
+    }
+    .home-img img{
+        width: 90vw;
+        margin-top: 4rem;
+    }
 }
