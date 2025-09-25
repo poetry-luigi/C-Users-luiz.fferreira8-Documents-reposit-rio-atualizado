@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@400;700&display=swap');
  
 *{
+    color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
-     font-family: "Orbitron", serif
+    font-family: "Orbitron", serif;
+    
    
 }
 html{
@@ -16,9 +18,12 @@ scroll-padding-top: 80px;
 }
  
 body{
-     background-image: url(../img/fundobom.jpg);
+    background-image: url(../img/fundobom.jpg);
     background-size: cover;
-     width: 110%;
+    
+    background-position: center;
+    background-attachment: fixed;
+    width: 110%;
     height: 100vh;
     overflow-x: hidden;
     color: aliceblue;
@@ -35,6 +40,7 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    border-bottom: 0.1rem solid rgb(126, 126, 126);
 }
 .logo{
     font-size: 3rem;
@@ -140,10 +146,9 @@ color:aliceblue;
 .typing-text span::before{
     content: "";
     color:rgba(185, 182, 181, 0.712);
-    animation: words 20s infinite;
-}
 .typing-text span::after{
     content: "";
+}
    
     position: absolute;
     width: calc(100% + 8px);
@@ -259,22 +264,52 @@ color:aliceblue;
 section p {
     font-size: 1.8rem;
     line-height: 1.7;
-    color: rgb(31, 163, 252);
+    color: whitesmoke;
+}
+li{ 
+    font-size: 1.5rem;
+    color: white;
 }
  
 #contato a {
-    color: rgb(31, 163, 252);
+    color: white;
     font-weight: 500;
     transition: 0.3s ease;
 }
  
 #contato a:hover {
-    color: rgb(31, 163, 252);
+    color: aliceblue;
     text-decoration: underline;
 }
+#experiencia ul{
+    list-style: inside;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+#experiencia {
+    background-color: rgba(0, 0, 0, 0.377);   
+
+}#servicos {
+    background-color: rgba(0, 0, 0, 0.377);   
+
+}
+#habilidades {
+    background-color: rgba(0, 0, 0, 0.377);   
+
+}
+#formacao {
+    background-color: rgba(0, 0, 0, 0.377);   
+
+}
+#contato {
+    background-color: rgba(0, 0, 0, 0.377);   
+
+}
+
 form{
     margin-top: 1rem;
     background-color: rgba(0, 0, 0, 0.507);
+    width: 50rem;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0 25px rgba(221, 255, 69, 0.884);
@@ -284,7 +319,7 @@ form{
 form h2{
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: rgb(31, 163, 252);
+    color: rgb(255, 255, 255);
 }
 form input, form select, form textarea{
     width: 100%;
@@ -303,16 +338,17 @@ form input[type="radio"]{
     margin-right: 1rem;
 }
 form input[type="submit"]{
-    background-color: rgb(31, 163, 252);
+    background-color: rgba(221, 255, 69, 0.884);
     color: white;
     cursor: pointer;
     transition: 0.3s ease;
 }
 form input[type="submit"]:hover{
-    background-color: rgb(31, 163, 252);
-    box-shadow: 0 0 25px rgb(31, 163, 252);
+    background-color:rgba(221, 255, 69, 0.884);
+    box-shadow: 0 0 25px rgba(221, 255, 69, 0.884);
 }
-@media (max-width: 600px){
+@media (max-width: 600px)
+{
     section{
         padding: 3rem 4%;
     }
@@ -322,8 +358,4 @@ form input[type="submit"]:hover{
     .home-content h3{
         font-size: 2rem;
     }
-    .home-img img{
-        width: 90vw;
-        margin-top: 4rem;
-    }
-}
+} 
